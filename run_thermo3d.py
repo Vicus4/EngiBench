@@ -8,11 +8,11 @@ def run_3d_experiments_safe():
     os.makedirs(output_dir, exist_ok=True)
 
     # Reverting to the native, safe dimensions for ThermoElastic3D
-    nx, ny, nz = 16, 16, 16
+    nx=ny=nz=32
 
     configs = [
-        {"max_iter": 30, "volfrac": 0.2, "weight": 1.0, "name": "3D_16x16x16_light"},
-        {"max_iter": 30, "volfrac": 0.5, "weight": 0.5, "name": "3D_16x16x16_heavy"}
+        {"max_iter": 30, "volfrac": 0.2, "weight": 1.0, "name": "3D_32x32x32_light"},
+        {"max_iter": 30, "volfrac": 0.5, "weight": 0.5, "name": "3D_32x32x32_heavy"}
     ]
 
     problem = ThermoElastic3D(seed=42)

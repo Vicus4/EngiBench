@@ -19,8 +19,8 @@ from engibench.core import OptiStep
 from engibench.core import Problem
 from engibench.problems.thermoelastic3d.model import fem_model
 from engibench.problems.thermoelastic3d.model.fem_model import FeaModel3D
-
-NELX = NELY = NELZ = 16
+#ciao
+NELX = NELY = NELZ = 32
 FIXED_ELEMENTS = np.zeros((NELX + 1, NELY + 1, NELZ + 1), dtype=int)
 FIXED_ELEMENTS[0, 0, 0] = 1
 FIXED_ELEMENTS[0, -1, -1] = 1
