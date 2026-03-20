@@ -20,7 +20,7 @@ from engibench.core import Problem
 from engibench.problems.thermoelastic3d.model import fem_model
 from engibench.problems.thermoelastic3d.model.fem_model import FeaModel3D
 #ciao
-NELX = NELY = NELZ = 32
+NELX = NELY = NELZ = 64
 FIXED_ELEMENTS = np.zeros((NELX + 1, NELY + 1, NELZ + 1), dtype=int)
 FIXED_ELEMENTS[0, 0, 0] = 1
 FIXED_ELEMENTS[0, -1, -1] = 1
@@ -218,16 +218,16 @@ if __name__ == "__main__":
     dataset = problem.dataset
     first_item = dataset["train"][0]
     first_item_design = np.array(first_item["optimal_design"])
-    problem.render(first_item_design, open_window=True)
+    problem.render(first_item_design, open_window=False)
 
     # --- Render the design
     design, _ = problem.random_design()
-    problem.render(design, open_window=True)
+    problem.render(design, open_window=False)
 
     # --- Optimize a design ---
     design = 0.2 * np.ones((NELX, NELY, NELZ), dtype=float)
     design, objectives = problem.optimize(design)
-    problem.render(design, open_window=True)
+    problem.render(design, open_window=False)
 
     # --- Evaluate a design ---
     problem.reset(seed=0)
