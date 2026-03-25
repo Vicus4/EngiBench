@@ -1,0 +1,7 @@
+Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/home/vcencini/EngiBench/engibench/problems/beams3d/generate_dataset.py", line 8, in <module>
+    from v0 import Beams3D
+ModuleNotFoundError: No module named 'v0'

@@ -1,0 +1,3 @@
+Avvio generazione dataset utilizzando 127 core della CPU.
+
+--- Generazione dataset per risoluzione: 16x16x16 ---

@@ -1,0 +1,16 @@
+Avvio generazione dataset utilizzando 127 core della CPU.
+
+--- Generazione dataset per risoluzione: 16x16x16 ---
+
+Errore durante la generazione di un campione a res 16: cannot reshape array of size 4096 into shape (262144,1)
+
+Errore durante la generazione di un campione a res 16: cannot reshape array of size 4096 into shape (262144,1)
+
+Errore durante la generazione di un campione a res 16: cannot reshape array of size 4096 into shape (262144,1)
+
+Errore durante la generazione di un campione a res 16: cannot reshape array of size 4096 into shape (262144,1)
+
+Errore durante la generazione di un campione a res 16: cannot reshape array of size 4096 into shape (262144,1)
+
+Salvataggio finale per risoluzione 16 in corso...
+Risoluzione 16 completata con 0/5 campioni validi.
